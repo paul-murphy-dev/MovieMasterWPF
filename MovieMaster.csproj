@@ -86,12 +86,12 @@
     </ApplicationDefinition>
     <Compile Include="DataLayer\Attributes\ColumnAttribute.cs" />
     <Compile Include="DataLayer\Attributes\PrimaryKeyForeinKeyAttribute.cs" />
-    <Compile Include="DataLayer\DataResult.cs" />
     <Compile Include="DataLayer\Attributes\IgnoreAttribute.cs" />
+    <Compile Include="DataLayer\DataResult.cs" />
     <Compile Include="DataLayer\DatatableExtensions.cs" />
-    <Compile Include="DataLayer\IPopulate.cs" />
     <Compile Include="DataLayer\Attributes\PrimaryKeyAttribute.cs" />
     <Compile Include="DataLayer\Attributes\TableAttribute.cs" />
+    <Compile Include="DataLayer\IPopulate.cs" />
     <Compile Include="DataLayer\LocalStore.cs">
       <DependentUpon>LocalStore.xsd</DependentUpon>
     </Compile>
@@ -106,7 +106,6 @@
     <Compile Include="Helpers\FileUtility.cs" />
     <Compile Include="Helpers\JSONConverter.cs" />
     <Compile Include="Helpers\SettingsManager.cs" />
-    <Compile Include="Helpers\WikiScraper.cs" />
     <Compile Include="MovieDbAPI\CastMember.cs" />
     <Compile Include="MovieDbAPI\Cast.cs" />
     <Compile Include="MovieDbAPI\CrewMember.cs" />

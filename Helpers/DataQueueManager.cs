@@ -180,15 +180,7 @@ namespace MovieMaster.Helpers
             }
         }
 
-        private void InitScraper()
-        {
-            NameValueCollection configSectionSettings = (NameValueCollection)ConfigurationManager.GetSection("UserSettings");
-            WikiScraper.BasePath = configSectionSettings["ImageFolder"];
-            if (!System.IO.Directory.Exists(WikiScraper.BasePath))
-            {
-                System.IO.Directory.CreateDirectory(WikiScraper.BasePath);
-            }
-        }        
+          
     
     }
 }
