@@ -1,0 +1,73 @@
+﻿<Window x:Class="MovieMaster.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Views="clr-namespace:MovieMaster.Views"
+        Name="mainWindow"
+        Title="MOVIE MASTER" Height="Auto" Width="Auto"
+        WindowStyle="None"
+        ResizeMode="CanResizeWithGrip"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderThickness="1" BorderBrush="Black" Height="26" Background="{DynamicResource Dark}" MouseDown="Grid_MouseDown">
+            <Grid MouseDown="Grid_MouseDown">
+                <Label Background="{DynamicResource TitleBar}" 
+                       HorizontalAlignment="Stretch" 
+                       MouseDoubleClick="Label_MouseDoubleClick" />
+                <Label MouseDoubleClick="Label_MouseDoubleClick" 
+                       MouseDown="Grid_MouseDown" 
+                       Background="{DynamicResource TitleBar}" 
+                       Foreground="{DynamicResource TitleBarText}"                        
+                       HorizontalAlignment="Center"
+                       Content="Movie Master"/>
+                <Button Width="20" 
+                        Height="20"                        
+                        HorizontalAlignment="Right" 
+                        Click="Button_Click_1"
+                        Margin="5,0,53,0">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border Style="{DynamicResource ControlButtonBorderStyle}">
+                                <Image Width="12" Height="12" Source="{DynamicResource Minimize}" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Margin="5,0,29,0" 
+                        Background="{DynamicResource Dark}" 
+                        Width="20" 
+                        Height="20" 
+                        Foreground="White" 
+                        HorizontalAlignment="Right" 
+                        Click="Button_Click">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border Style="{DynamicResource ControlButtonBorderStyle}">
+                                <Image Width="16" Height="16" Source="{DynamicResource restoreImg}" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Width="20" 
+                        Height="20"                        
+                        HorizontalAlignment="Right" 
+                        Command="{Binding ViewModel.ExitCommand}"
+                        Margin="0,0,5,0">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border Style="{DynamicResource CloseButtonBorderStyle}">
+                                <Image Width="12" Height="12" Source="{DynamicResource closeImg}" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Image Source="{DynamicResource MMIcon}" HorizontalAlignment="Left"/>
+            </Grid>
+        </Border>
+        <ContentControl Grid.Row="1" Content="{Binding View}"/>
+    </Grid>
+</Window>

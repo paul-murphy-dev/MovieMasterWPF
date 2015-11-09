@@ -1,0 +1,5 @@
+#ignore all these types of files/folders
+.vs
+bin
+obj
+.git

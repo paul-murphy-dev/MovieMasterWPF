@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LocalStore" targetNamespace="http://tempuri.org/LocalStore.xsd" xmlns:mstns="http://tempuri.org/LocalStore.xsd" xmlns="http://tempuri.org/LocalStore.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LocalStore" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LocalStore" msprop:Generator_UserDSName="LocalStore">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MovieTable" msprop:Generator_TableClassName="MovieTableDataTable" msprop:Generator_TableVarName="tableMovieTable" msprop:Generator_TablePropName="MovieTable" msprop:Generator_RowDeletingName="MovieTableRowDeleting" msprop:Generator_UserTableName="MovieTable" msprop:Generator_RowChangingName="MovieTableRowChanging" msprop:Generator_RowEvHandlerName="MovieTableRowChangeEventHandler" msprop:Generator_RowDeletedName="MovieTableRowDeleted" msprop:Generator_RowEvArgName="MovieTableRowChangeEvent" msprop:Generator_RowChangedName="MovieTableRowChanged" msprop:Generator_RowClassName="MovieTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MovieID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnMovieID" msprop:Generator_ColumnPropNameInRow="MovieID" msprop:Generator_ColumnPropNameInTable="MovieIDColumn" msprop:Generator_UserColumnName="MovieID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnPropNameInTable="YearColumn" msprop:Generator_UserColumnName="Year" type="xs:int" minOccurs="0" />
+              <xs:element name="GenreListID" msprop:Generator_ColumnVarNameInTable="columnGenreListID" msprop:Generator_ColumnPropNameInRow="GenreListID" msprop:Generator_ColumnPropNameInTable="GenreListIDColumn" msprop:Generator_UserColumnName="GenreListID" type="xs:int" minOccurs="0" />
+              <xs:element name="ImageListID" msprop:Generator_ColumnVarNameInTable="columnImageListID" msprop:Generator_ColumnPropNameInRow="ImageListID" msprop:Generator_ColumnPropNameInTable="ImageListIDColumn" msprop:Generator_UserColumnName="ImageListID" type="xs:int" minOccurs="0" />
+              <xs:element name="GenreString" msprop:Generator_ColumnVarNameInTable="columnGenreString" msprop:Generator_ColumnPropNameInRow="GenreString" msprop:Generator_ColumnPropNameInTable="GenreStringColumn" msprop:Generator_UserColumnName="GenreString" type="xs:string" default="" />
+              <xs:element name="Description" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Rating" msprop:Generator_ColumnVarNameInTable="columnRating" msprop:Generator_ColumnPropNameInRow="Rating" msprop:Generator_ColumnPropNameInTable="RatingColumn" msprop:Generator_UserColumnName="Rating" type="xs:double" default="0" />
+              <xs:element name="TimesPlayed" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="TimesPlayed" msprop:Generator_ColumnVarNameInTable="columnTimesPlayed" msprop:Generator_ColumnPropNameInTable="TimesPlayedColumn" msprop:Generator_UserColumnName="TimesPlayed" type="xs:int" default="0" />
+              <xs:element name="UserRating" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="UserRating" msprop:Generator_ColumnVarNameInTable="columnUserRating" msprop:Generator_ColumnPropNameInTable="UserRatingColumn" msprop:Generator_UserColumnName="UserRating" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GenreTable" msprop:Generator_TableClassName="GenreTableDataTable" msprop:Generator_TableVarName="tableGenreTable" msprop:Generator_TablePropName="GenreTable" msprop:Generator_RowDeletingName="GenreTableRowDeleting" msprop:Generator_UserTableName="GenreTable" msprop:Generator_RowChangingName="GenreTableRowChanging" msprop:Generator_RowEvHandlerName="GenreTableRowChangeEventHandler" msprop:Generator_RowDeletedName="GenreTableRowDeleted" msprop:Generator_RowEvArgName="GenreTableRowChangeEvent" msprop:Generator_RowChangedName="GenreTableRowChanged" msprop:Generator_RowClassName="GenreTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GenreID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnGenreID" msprop:Generator_ColumnPropNameInRow="GenreID" msprop:Generator_ColumnPropNameInTable="GenreIDColumn" msprop:Generator_UserColumnName="GenreID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GenreListTable" msprop:Generator_TableClassName="GenreListTableDataTable" msprop:Generator_TableVarName="tableGenreListTable" msprop:Generator_TablePropName="GenreListTable" msprop:Generator_RowDeletingName="GenreListTableRowDeleting" msprop:Generator_UserTableName="GenreListTable" msprop:Generator_RowChangingName="GenreListTableRowChanging" msprop:Generator_RowEvHandlerName="GenreListTableRowChangeEventHandler" msprop:Generator_RowDeletedName="GenreListTableRowDeleted" msprop:Generator_RowEvArgName="GenreListTableRowChangeEvent" msprop:Generator_RowChangedName="GenreListTableRowChanged" msprop:Generator_RowClassName="GenreListTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GenreListID" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnGenreListID" msprop:Generator_ColumnPropNameInRow="GenreListID" msprop:Generator_ColumnPropNameInTable="GenreListIDColumn" msprop:Generator_UserColumnName="GenreListID" type="xs:string" />
+              <xs:element name="GenreID" msprop:Generator_ColumnVarNameInTable="columnGenreID" msprop:Generator_ColumnPropNameInRow="GenreID" msprop:Generator_ColumnPropNameInTable="GenreIDColumn" msprop:Generator_UserColumnName="GenreID" type="xs:int" minOccurs="0" />
+              <xs:element name="MovieID" msprop:Generator_ColumnVarNameInTable="columnMovieID" msprop:Generator_ColumnPropNameInRow="MovieID" msprop:Generator_ColumnPropNameInTable="MovieIDColumn" msprop:Generator_UserColumnName="MovieID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ImageListTable" msprop:Generator_TableClassName="ImageListTableDataTable" msprop:Generator_TableVarName="tableImageListTable" msprop:Generator_TablePropName="ImageListTable" msprop:Generator_RowDeletingName="ImageListTableRowDeleting" msprop:Generator_UserTableName="ImageListTable" msprop:Generator_RowChangingName="ImageListTableRowChanging" msprop:Generator_RowEvHandlerName="ImageListTableRowChangeEventHandler" msprop:Generator_RowDeletedName="ImageListTableRowDeleted" msprop:Generator_RowEvArgName="ImageListTableRowChangeEvent" msprop:Generator_RowChangedName="ImageListTableRowChanged" msprop:Generator_RowClassName="ImageListTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ImageListID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnImageListID" msprop:Generator_ColumnPropNameInRow="ImageListID" msprop:Generator_ColumnPropNameInTable="ImageListIDColumn" msprop:Generator_UserColumnName="ImageListID" type="xs:int" />
+              <xs:element name="ImageID" msprop:Generator_ColumnVarNameInTable="columnImageID" msprop:Generator_ColumnPropNameInRow="ImageID" msprop:Generator_ColumnPropNameInTable="ImageIDColumn" msprop:Generator_UserColumnName="ImageID" type="xs:int" minOccurs="0" />
+              <xs:element name="MovieID" msprop:Generator_ColumnVarNameInTable="columnMovieID" msprop:Generator_ColumnPropNameInRow="MovieID" msprop:Generator_ColumnPropNameInTable="MovieIDColumn" msprop:Generator_UserColumnName="MovieID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ImagesTable" msprop:Generator_TableClassName="ImagesTableDataTable" msprop:Generator_TableVarName="tableImagesTable" msprop:Generator_TablePropName="ImagesTable" msprop:Generator_RowDeletingName="ImagesTableRowDeleting" msprop:Generator_UserTableName="ImagesTable" msprop:Generator_RowChangingName="ImagesTableRowChanging" msprop:Generator_RowEvHandlerName="ImagesTableRowChangeEventHandler" msprop:Generator_RowDeletedName="ImagesTableRowDeleted" msprop:Generator_RowEvArgName="ImagesTableRowChangeEvent" msprop:Generator_RowChangedName="ImagesTableRowChanged" msprop:Generator_RowClassName="ImagesTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ImageID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnImageID" msprop:Generator_ColumnPropNameInRow="ImageID" msprop:Generator_ColumnPropNameInTable="ImageIDColumn" msprop:Generator_UserColumnName="ImageID" type="xs:int" />
+              <xs:element name="ImageLocation" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ImageLocation" msprop:Generator_ColumnVarNameInTable="columnImageLocation" msprop:Generator_ColumnPropNameInTable="ImageLocationColumn" msprop:Generator_UserColumnName="ImageLocation" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MovieFileTable" msprop:Generator_TableClassName="MovieFileTableDataTable" msprop:Generator_TableVarName="tableMovieFileTable" msprop:Generator_TablePropName="MovieFileTable" msprop:Generator_RowDeletingName="MovieFileTableRowDeleting" msprop:Generator_UserTableName="MovieFileTable" msprop:Generator_RowChangingName="MovieFileTableRowChanging" msprop:Generator_RowEvHandlerName="MovieFileTableRowChangeEventHandler" msprop:Generator_RowDeletedName="MovieFileTableRowDeleted" msprop:Generator_RowEvArgName="MovieFileTableRowChangeEvent" msprop:Generator_RowChangedName="MovieFileTableRowChanged" msprop:Generator_RowClassName="MovieFileTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MovieID" msprop:Generator_ColumnVarNameInTable="columnMovieID" msprop:Generator_ColumnPropNameInRow="MovieID" msprop:Generator_ColumnPropNameInTable="MovieIDColumn" msprop:Generator_UserColumnName="MovieID" type="xs:int" />
+              <xs:element name="LocalPath" msprop:Generator_ColumnVarNameInTable="columnLocalPath" msprop:Generator_ColumnPropNameInRow="LocalPath" msprop:Generator_ColumnPropNameInTable="LocalPathColumn" msprop:Generator_UserColumnName="LocalPath" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MovieMetadataTable" msprop:Generator_TableClassName="MovieMetadataTableDataTable" msprop:Generator_TableVarName="tableMovieMetadataTable" msprop:Generator_TablePropName="MovieMetadataTable" msprop:Generator_RowDeletingName="MovieMetadataTableRowDeleting" msprop:Generator_UserTableName="MovieMetadataTable" msprop:Generator_RowChangingName="MovieMetadataTableRowChanging" msprop:Generator_RowEvHandlerName="MovieMetadataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="MovieMetadataTableRowDeleted" msprop:Generator_RowEvArgName="MovieMetadataTableRowChangeEvent" msprop:Generator_RowChangedName="MovieMetadataTableRowChanged" msprop:Generator_RowClassName="MovieMetadataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MovieID" msprop:Generator_ColumnVarNameInTable="columnMovieID" msprop:Generator_ColumnPropNameInRow="MovieID" msprop:Generator_ColumnPropNameInTable="MovieIDColumn" msprop:Generator_UserColumnName="MovieID" type="xs:int" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="MovieTableKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MovieTable" />
+      <xs:field xpath="mstns:MovieID" />
+    </xs:unique>
+    <xs:unique name="GenreTableKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GenreTable" />
+      <xs:field xpath="mstns:GenreID" />
+    </xs:unique>
+    <xs:unique name="GenreListTableKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GenreListTable" />
+      <xs:field xpath="mstns:GenreListID" />
+    </xs:unique>
+    <xs:unique name="ImageListTableKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ImageListTable" />
+      <xs:field xpath="mstns:ImageListID" />
+    </xs:unique>
+    <xs:unique name="ImagesTableKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ImagesTable" />
+      <xs:field xpath="mstns:ImageID" />
+    </xs:unique>
+    <xs:unique name="MovieFileTableKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MovieFileTable" />
+      <xs:field xpath="mstns:MovieID" />
+    </xs:unique>
+    <xs:unique name="MovieMetadataTableKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MovieMetadataTable" />
+      <xs:field xpath="mstns:MovieID" />
+    </xs:unique>
+    <xs:keyref name="FK_MovieTable_MovieMetadataTable" refer="MovieTableKey1" msprop:rel_Generator_UserChildTable="MovieMetadataTable" msprop:rel_Generator_ChildPropName="GetMovieMetadataTableRows" msprop:rel_Generator_ParentPropName="MovieTableRow" msprop:rel_Generator_UserRelationName="FK_MovieTable_MovieMetadataTable" msprop:rel_Generator_RelationVarName="relationFK_MovieTable_MovieMetadataTable" msprop:rel_Generator_UserParentTable="MovieTable">
+      <xs:selector xpath=".//mstns:MovieMetadataTable" />
+      <xs:field xpath="mstns:MovieID" />
+    </xs:keyref>
+    <xs:keyref name="FK_MovieTable_MovieFileTable" refer="MovieTableKey1" msprop:rel_Generator_UserChildTable="MovieFileTable" msprop:rel_Generator_ChildPropName="GetMovieFileTableRows" msprop:rel_Generator_ParentPropName="MovieTableRow" msprop:rel_Generator_UserRelationName="FK_MovieTable_MovieFileTable" msprop:rel_Generator_RelationVarName="relationFK_MovieTable_MovieFileTable" msprop:rel_Generator_UserParentTable="MovieTable">
+      <xs:selector xpath=".//mstns:MovieFileTable" />
+      <xs:field xpath="mstns:MovieID" />
+    </xs:keyref>
+    <xs:keyref name="FK_MovieTable_ImageListTable" refer="MovieTableKey1" msprop:rel_Generator_UserChildTable="ImageListTable" msprop:rel_Generator_ChildPropName="GetImageListTableRows" msprop:rel_Generator_ParentPropName="MovieTableRow" msprop:rel_Generator_UserRelationName="FK_MovieTable_ImageListTable" msprop:rel_Generator_RelationVarName="relationFK_MovieTable_ImageListTable" msprop:rel_Generator_UserParentTable="MovieTable">
+      <xs:selector xpath=".//mstns:ImageListTable" />
+      <xs:field xpath="mstns:MovieID" />
+    </xs:keyref>
+    <xs:keyref name="FK_ImagesTable_ImageListTable" refer="ImagesTableKey1" msprop:rel_Generator_UserChildTable="ImageListTable" msprop:rel_Generator_ChildPropName="GetImageListTableRows" msprop:rel_Generator_ParentPropName="ImagesTableRow" msprop:rel_Generator_UserRelationName="FK_ImagesTable_ImageListTable" msprop:rel_Generator_RelationVarName="relationFK_ImagesTable_ImageListTable" msprop:rel_Generator_UserParentTable="ImagesTable">
+      <xs:selector xpath=".//mstns:ImageListTable" />
+      <xs:field xpath="mstns:ImageID" />
+    </xs:keyref>
+    <xs:keyref name="FK_MovieTable_GenreListTable" refer="MovieTableKey1" msprop:rel_Generator_UserChildTable="GenreListTable" msprop:rel_Generator_ChildPropName="GetGenreListTableRows" msprop:rel_Generator_ParentPropName="MovieTableRow" msprop:rel_Generator_UserRelationName="FK_MovieTable_GenreListTable" msprop:rel_Generator_RelationVarName="relationFK_MovieTable_GenreListTable" msprop:rel_Generator_UserParentTable="MovieTable">
+      <xs:selector xpath=".//mstns:GenreListTable" />
+      <xs:field xpath="mstns:MovieID" />
+    </xs:keyref>
+    <xs:keyref name="FK_GenreTable_GenreListTable" refer="GenreTableKey1" msprop:rel_Generator_UserChildTable="GenreListTable" msprop:rel_Generator_ChildPropName="GetGenreListTableRows" msprop:rel_Generator_ParentPropName="GenreTableRow" msprop:rel_Generator_UserRelationName="FK_GenreTable_GenreListTable" msprop:rel_Generator_RelationVarName="relationFK_GenreTable_GenreListTable" msprop:rel_Generator_UserParentTable="GenreTable">
+      <xs:selector xpath=".//mstns:GenreListTable" />
+      <xs:field xpath="mstns:GenreID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
