@@ -1,5 +1,5 @@
 # MovieMasterWPF
-An application that reads movie files and obtains metadata about the movies from themobiedb.org.
+An application that reads movie files and obtains metadata about the movies from themoviedb.org.
 
 I created this application to teach myself WPF.
 
